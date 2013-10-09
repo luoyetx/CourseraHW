@@ -1,0 +1,8 @@
+outcome <- read.csv("outcome-of-care-measures.csv", colClasses="character")
+heart.attack <- as.numeric(outcome[, 11])
+heart.failure <- as.numeric(outcome[, 17])
+pneumonia <- as.numeric(outcome[, 23])
+par(mfrow=c(3,1))
+hist(heart.attack, main="Heart Attack", xlab="30-day Death Rate", xlim=c(5,20))
+hist(heart.failure, main="Heart Failure", xlab="30-day Death Rate", xlim=c(5,20))
+hist(pneumonia, main="Pneumonia", xlab="30-day Death Rate", xlim=c(5,20))
