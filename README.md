@@ -1,11 +1,11 @@
 CourseArea
 ==========
 
-The source code for the class homework on [CourseArea](http://www.coursera.org)
+My Homework on [CourseArea](http://www.coursera.org)
 
 #### Courses
-* [Machine Learning](http://www.coursera.org/course/ml)
+* [Machine Learning](http://www.coursera.org/course/ml)(Completed)
 
-* [Computing for Data Analysis](http://www.coursera.org/course/compdata)
+* [Computing for Data Analysis](http://www.coursera.org/course/compdata)(Completed)
 
-* [Digital Signal Processing](http://www.coursera.org/course/dsp)
+* [Digital Signal Processing](http://www.coursera.org/course/dsp)(Taking)
