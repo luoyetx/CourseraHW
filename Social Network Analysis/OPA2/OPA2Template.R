@@ -344,22 +344,26 @@ points(a$xmin:max(x),fittedvals,type='l',col='red')
 # use the degree() function and options for calculating directed degree
 # see the documentation here: http://igraph.sourceforge.net/documentation.html
 
+od = degree(g, mode="out")
+id = degree(g, mode="in")
+
 # see which nodes have the max out and indegree
 # for example, if you were to store the outdegree in the vector od, you could look up the page name like so:
-V(g)$label[which.max(od)]
+print(sprintf("Maximum Outdegree Node Label is '%s'", V(g)$label[which.max(od)]))
+print(sprintf("Maximum indegree Node Label is '%s'", V(g)$label[which.max(id)]))
 
 # find undirected betweenness (betweenness()) scores and then nodes with the max betweenness
 # warning, can be slow with large graphs, you may consider betweenness.estimate instead
 
+bb = betweenness.estimate(g, cutoff=0)
+
 # this high betweennes node may seem a bit surprising
 # you can check out its neighbors like this (if you have stored betweenness values in the vector bb).
-V(g)$label[V(g)[nei(which.max(bb))]]
+print(sprintf("Maximum Betweenness Node Label is %s", V(g)$label[V(g)[nei(which.max(bb))]]))
 
 # calculate Page Rank (page.rank()) and find the node having the highest pagerank
 # you'll want the $vector portion of the answer returned
 
+pr = page.rank(g, damping = 0.85)
 
-
-
-
-
+print(sprintf("Highest PageRank Node Label is '%s'", V(g)$label[which.max(pr$vector)]))
