@@ -12,10 +12,10 @@ xNoisy = noise + x;
 % plot x, xNoisy
 subn = 750:1250;
 subplot(3, 1, 1);
-ylabel('x'); plot(subn, x(subn));
+plot(subn, x(subn)); ylabel('x');
 subplot(3, 1, 2);
-ylabel('xNoisy'); plot(subn, xNoisy(subn));
+plot(subn, xNoisy(subn)); ylabel('xNoisy');
 % apply the leaky integrator to the noisy signal
 y = conv(xNoisy, h, 'vaild');
 subplot(3, 1, 3);
-ylabel('y'); plot(subn, y(subn));
+plot(subn, y(subn)); ylabel('y');
