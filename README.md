@@ -11,3 +11,5 @@ My Homework on [CourseArea](http://www.coursera.org)
 * [Digital Signal Processing](https://www.coursera.org/course/dsp)(Taking)
 
 * [Social Network Analysis](https://www.coursera.org/course/sna)(Taking)
+
+* [Automata](https://www.coursera.org/course/automata)(Taking)
