@@ -4,12 +4,12 @@ CourseArea
 My Homework on [CourseArea](http://www.coursera.org)
 
 #### Courses
-* [Machine Learning](https://www.coursera.org/course/ml)(Completed)
+* [Machine Learning](https://www.coursera.org/course/ml)(Finished)
 
-* [Computing for Data Analysis](https://www.coursera.org/course/compdata)(Completed)
+* [Computing for Data Analysis](https://www.coursera.org/course/compdata)(Finished)
 
-* [Digital Signal Processing](https://www.coursera.org/course/dsp)(Taking)
+* [Digital Signal Processing](https://www.coursera.org/course/dsp)(Finished)
 
-* [Social Network Analysis](https://www.coursera.org/course/sna)(Taking)
+* [Social Network Analysis](https://www.coursera.org/course/sna)(Finished)
 
 * [Automata](https://www.coursera.org/course/automata)(Taking)
