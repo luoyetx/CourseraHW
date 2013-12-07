@@ -1,7 +1,7 @@
-CourseArea
+Coursera
 ==========
 
-My Homework on [CourseArea](http://www.coursera.org)
+My Homework on [Coursera](http://www.coursera.org)
 
 #### Courses
 * [Machine Learning](https://www.coursera.org/course/ml)(Finished)
