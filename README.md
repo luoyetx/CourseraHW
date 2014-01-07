@@ -12,4 +12,4 @@ My Homework on [Coursera](http://www.coursera.org)
 
 * [Social Network Analysis](https://www.coursera.org/course/sna)(Finished)
 
-* [Automata](https://www.coursera.org/course/automata)(Taking)
+* [Automata](https://www.coursera.org/course/automata)(Finished)
