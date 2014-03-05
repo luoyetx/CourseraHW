@@ -1,6 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
 from collections import namedtuple
 Item = namedtuple("Item", ['index', 'value', 'weight'])
 
@@ -27,29 +24,23 @@ def solve_it(input_data):
     weight = 0
     taken = [0]*len(items)
 
-    for item in items:
-        if weight + item.weight <= capacity:
-            taken[item.index] = 1
-            value += item.value
-            weight += item.weight
+    O = [[0 for i in xrange(item_count+1)] for j in xrange(capacity+1)]
+    for index, value, weight in items:
+        for k in xrange(capacity+1):
+            if (k < weight):
+                O[k][index] = O[k][index-1]
+            else: O[k][index] = max(O[k][index-1], O[k-weight][index-1]+value)
+    value = O[capacity][index]
     
+    k = capacity
+    for index, _, weight in items[::-1]:
+        if (O[k][index] == O[k][index-1]):
+            taken[index] = 0
+        else:
+            taken[index] = 1
+            #print index, value
+            k -= weight
     # prepare the solution in the specified output format
-    output_data = str(value) + ' ' + str(0) + '\n'
+    output_data = str(value) + ' ' + str(1) + '\n'
     output_data += ' '.join(map(str, taken))
     return output_data
-
-del solve_it
-from solvesmall import solve_it
-
-import sys
-
-if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        file_location = sys.argv[1].strip()
-        input_data_file = open(file_location, 'r')
-        input_data = ''.join(input_data_file.readlines())
-        input_data_file.close()
-        print solve_it(input_data)
-    else:
-        print 'This test requires an input file.  Please select one from the data directory. (i.e. python solver.py ./data/ks_4_0)'
-
