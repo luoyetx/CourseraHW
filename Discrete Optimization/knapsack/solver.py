@@ -41,6 +41,9 @@ def solve_it(input_data):
 del solve_it
 from solvesmall import solve_it
 
+del solve_it
+from solveall import solve_it
+
 import sys
 
 if __name__ == '__main__':
