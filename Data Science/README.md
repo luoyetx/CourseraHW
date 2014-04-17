@@ -7,4 +7,4 @@ This specialization is provided by **Johns Hopkins University**.
 2. [R Programming](https://www.coursera.org/course/rprog)
 3. [Getting and Cleaning Data](https://www.coursera.org/course/getdata)
 
-Thanks for these great course.
+Thanks for these great courses.
